@@ -2,6 +2,8 @@
 
 
 # 1. Hand Gesture-Based Volume Control:
+by 202434862 허준서
+
 The first part of the code uses MediaPipe Hands to detect hand landmarks in real-time from a webcam feed.
 By calculating the distance between the thumb and index finger, it maps this distance to the system audio volume using Pycaw.
 It visually displays the distance and current volume on the video feed, allowing the user to control volume by adjusting the gap between their thumb and index finger.
