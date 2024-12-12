@@ -58,6 +58,12 @@ while cap.isOpened():
             vol = np.interp(distance, [30, 200], [min_vol, max_vol])
             volume.SetMasterVolumeLevel(vol, None)
 
+            # 거리와 볼륨 화면에 표시
+            cv2.circle(image, (thumb_x, thumb_y), 10, (255, 0, 0), -1)
+            cv2.circle(image, (index_x, index_y), 10, (255, 0, 0), -1)
+            cv2.line(image, (thumb_x, thumb_y), (index_x, index_y), (255, 0, 0), 3)
+            cv2.putText(image, f'Volume: {int(np.interp(vol, [min_vol, max_vol], [0, 100]))}%', 
+                        (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
 
     cv2.imshow('Hand Volume Control', image)
 
