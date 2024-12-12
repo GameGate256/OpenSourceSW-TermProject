@@ -19,7 +19,7 @@ pip install opencv-python mediapipe pycaw comtypes numpy
 3. **Camera Access**: The script uses your system's default webcam. Make sure the camera is functional and accessible.
 
 # 2. Category-Based Object Classification
-by 202434862 진준하
+by 202434849 진준하
 
 This program uses YOLO (You Only Look Once) to detect and classify objects in real-time from a webcam feed. 
 The detected objects are grouped into predefined categories such as vehicles, animals, electronics, and more. 
